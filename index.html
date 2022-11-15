@@ -34,11 +34,12 @@
                 <ul>
                     <li>
                         <label for="first-name">first name</label>
-                        <input type="text" name="first-name" id="first-name">
+                        <input type="text" name="first-name" id="first-name" minlength="3" required
+                            title="Name must be at least 3 characters.">
                     </li>
                     <li>
                         <label for="last-name">last name</label>
-                        <input type="text" name="last-name" id="lastname">
+                        <input type="text" name="last-name" id="lastname" required>
                     </li>
                 </ul>
             </fieldset>
@@ -46,11 +47,11 @@
                 <ul>
                     <li>
                         <label for="email">email</label>
-                        <input type="email" name="email" id="email">
+                        <input type="email" name="email" id="email" required>
                     </li>
                     <li>
                         <label for="phone-number">phone number</label>
-                        <input type="tel" name="phone-number" id="phone-number">
+                        <input type="tel" name="phone-number" id="phone-number" minlength="9" required>
                     </li>
                 </ul>
             </fieldset>
@@ -58,11 +59,12 @@
                 <ul>
                     <li>
                         <label for="password1">password</label>
-                        <input type="password" name="password1" id="password1">
+                        <input type="password" name="password1" id="password1" required>
+                        <output for="password1" class="pass-output">*Passwords do not match!</output>
                     </li>
                     <li>
                         <label for="password2">confirm password</label>
-                        <input type="password" name="password2" id="password2">
+                        <input type="password" name="password2" id="password2" required>
                     </li>
                 </ul>
             </fieldset>
